@@ -109,7 +109,8 @@
     color: #FFFFFF;
 
 //go to top button
-
+.goTop a svg path
+    fill: grey
 .goTop
     display: inline-block
     position: fixed
@@ -119,6 +120,8 @@
     opacity: 0.6;
     transition: 0.3s;
     border-radius: 50%
+    
+        
     
 
 .scrolledBtn:hover
@@ -222,7 +225,6 @@
             transform: translateY(-12.5px) rotate(-45deg)
 
 .line
-    background: black
     width: 45px
     height: 5px
     position: absolute
@@ -231,9 +233,15 @@
 
     &.line-1
         top: 0%
+        background: grey
 
     &.line-2
         top: 50%
+        background: #8b1616
+        
 
     &.line-3
         top: 100%
+        background: grey
+
+
