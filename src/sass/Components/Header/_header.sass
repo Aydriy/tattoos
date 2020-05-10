@@ -1,0 +1,239 @@
+@import '../../Base/breackpoints'
+    
+.header
+    background-image: url('./image/MaskGroup.jpg')
+    height: 670px
+    
+.header-nav
+    border-bottom: 1px solid #89898B
+    padding-top: 40px
+
+.header-nav-ul 
+    list-style: none
+    display: flex
+    justify-content: space-between
+    margin-bottom: 10px
+
+.header-nav-li
+    cursor: pointer
+    transition: 0.4s
+    &:hover
+        color: #FF0E0E
+        transition: 0.4s
+
+.header-nav-li-contact
+    color: #FF0E0E;
+
+.social-network-ul
+    list-style: none
+    li
+        margin-bottom: 21.5px
+        
+
+.social-network
+    margin-top: 20.7px
+    display: flex
+    justify-content: flex-end
+
+.instagram svg
+    position: absolute
+
+.instagram
+    display: flex
+    justify-content: center
+    align-items: center
+
+.logo-expertise
+    margin-top: 10px
+    position: absolute
+
+.header-img
+    z-index: -1
+    position: absolute
+
+.container-logo-description-btn-active
+    transform: translateY(-100%)
+    transition: transform 0.3s
+.container-logo-description-btn
+    transition: transform 0.3s
+
+
+
+@media ( max-width:$screen-md-max  )
+    .social-network
+        margin-right: 250px
+    .header-nav
+        border-bottom: none
+    .header-nav-ul
+        margin-right: 75px
+        position: absolute
+        right: 0
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        li
+            margin-bottom: 20px
+    
+@media ( max-width:$screen-md-max  )
+    .social-network
+        display: none
+    .header-nav
+        display: none
+    .logo-expertise
+        margin-top: 50px
+        position: absolute
+    .tattoos-logo-container
+        .tattoos-logo
+            display: flex
+            justify-content: center
+            margin-top: 102px
+
+.tattoos-logo-container
+    display: flex
+    justify-content: center
+    
+.tattoos-logo
+    display: flex
+    justify-content: center
+    margin-top: -30px
+
+.tattos-description
+    display: flex
+    justify-content: center
+    font-family: Playfair Display SC;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+
+//go to top button
+
+.goTop
+    display: inline-block
+    position: fixed
+    right: -100px
+    bottom: 20px
+    z-index: 100;
+    opacity: 0.6;
+    transition: 0.3s;
+    border-radius: 50%
+    
+
+.scrolledBtn:hover
+    cursor: pointer
+    opacity: 1;
+    
+
+.scrolledBtn
+    transform: translateX(-120px);
+
+
+.active
+    
+    border-bottom: 1px solid #ffffff
+    padding-bottom: 1px
+
+
+
+
+//burger 
+
+.burgerButton
+    z-index: 100
+    position: relative
+
+.nav-burger-wrapper
+    position: fixed
+    right: 0
+    z-index: 100
+
+.burger-nav
+    padding-top: 20px
+    display: inline-block
+    position: absolute
+    right: -350px
+    top: 0
+    height: 1062px
+    width: 350px
+    background-color: rgba(30, 24, 28, 0.9)
+    z-index: 90
+    transition: transform 0.3s 
+    &__title
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 20px
+    &__title-p
+        color: #ffffff;
+        text-decoration: none;
+        padding-right: 2px;
+        padding-left: 2px;
+        height: 21px;
+        margin-bottom: 20px;
+
+.burger-nav-active
+    transform: translateX(-100%)
+        
+    
+
+.item-container
+    margin-top: 50px
+    
+
+    
+@media (min-width: $screen-md-max)
+    .item-container
+        display: none
+    .burger-nav
+        display: none
+    
+        
+@media ( max-width:$screen-md )  
+    .tattoos-logo-container .tattoos-logo
+        width: 100%
+        padding-top: 30px
+    
+.hamburger
+    width: 75px
+    height: 25px
+    position: relative
+    cursor: pointer
+    margin: 10px
+    transition: all 0.3s 
+    &:hover, &:focus
+        .line-1
+            transform: translateY(-4px)
+        .line-3
+            transform: translateY(4px)
+    &:hover
+        opacity: 0.7
+        transition: all 0.3s 
+
+    &.activeHamburger
+        .line-1
+            transform: translateY(12.5px) rotate(45deg)
+
+        .line-2
+            opacity: 0
+
+        .line-3
+            transform: translateY(-12.5px) rotate(-45deg)
+
+.line
+    background: black
+    width: 45px
+    height: 5px
+    position: absolute
+    border-radius: 5px
+    transition: all 0.3s
+
+    &.line-1
+        top: 0%
+
+    &.line-2
+        top: 50%
+
+    &.line-3
+        top: 100%

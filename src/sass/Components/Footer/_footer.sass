@@ -1,0 +1,73 @@
+.footer
+    height: 140px
+    background-color: #1D1C21
+
+.footer-nav
+    border-bottom: 1px solid #89898B
+    padding-top: 20px
+    padding-bottom: 10px
+    border-top: 1px solid #89898B
+
+.social-network-ul-footer
+    display: flex
+    list-style: none
+    li
+        margin-right: 29px
+
+.instagram-footer svg
+    position: absolute
+.instagram-footer svg:nth-child(2n)
+    margin: 4px
+
+.instagram-footer
+    display: flex
+    
+
+.social-network-footer
+    display: flex
+    justify-content: flex-end
+    margin-top: 17.5px
+    
+
+.bottom-description-lable
+    position: absolute
+.bottom-description-p
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    color: #89898B
+    display: flex
+    margin-top: 9px
+    p 
+        margin-right: 80px
+
+.footer-nav-ul 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+@media ( max-width:$screen-md  )
+    .footer-nav-ul
+        margin-left: 20px
+        display: grid
+        grid-template-rows: 1fr 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr 
+        grid-gap: 10px;
+    .footer
+        height: 240px
+    .bottom-description-p
+        padding-right: 20px
+   
+@media ( max-width:$screen-sm  )
+    .footer-nav-ul
+        margin-left: 20px
+        display: grid
+        grid-template-rows: 1fr 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr 
+        grid-gap: 10px;
+    .footer
+        height: 340px

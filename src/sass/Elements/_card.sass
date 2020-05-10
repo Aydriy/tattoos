@@ -1,0 +1,49 @@
+
+
+.card
+    margin-top: 24px
+    width: 261px
+
+.read-more-plus
+    padding-top: 8px
+    display: flex
+    justify-content: flex-end
+
+.read-more a
+    text-decoration: none
+    margin-right: 7px
+    transition: 0.4s
+    &:hover
+        color: #FF0E0E
+        opacity: 0.8
+        transition: 0.4s
+
+.plus a
+    margin-top: 3px
+
+@media ( min-width:$screen-lg-max  )
+    .card-block
+        height: 709px
+        background-color: #1D1C21
+        padding-top: 80px
+    .card-container
+        display: flex
+        justify-content: space-between
+
+
+@media ( max-width:$screen-lg-max  )
+    .card-centrate
+        display: flex
+    .card-block
+        height: 1209px
+        background-color: #1D1C21
+        padding-top: 80px
+        
+
+
+@media ( max-width:$screen-md )
+    .card-block
+        height: 2000px
+        background-color: #1D1C21
+        padding-top: 80px
+    

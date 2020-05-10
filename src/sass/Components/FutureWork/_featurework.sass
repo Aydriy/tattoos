@@ -1,0 +1,67 @@
+.work-head
+    display: flex
+    flex-direction: column
+
+
+
+.work-card-description-info
+    position: absolute
+    
+  
+.work-card-description
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 70px
+
+@media ( min-width:$screen-lg-max  )
+    .card-container-work
+        display: flex
+        align-items: baseline
+        justify-content: space-between
+        margin-top: -80px
+
+@media ( max-width:$screen-lg-max  )
+    .card-container-work
+        margin: auto;
+        align-items: baseline
+        display: grid;
+        grid-template-rows: 330px 330px;
+        grid-template-columns: 250px 250px;
+        grid-gap: 80px;
+
+    .featyre-container
+        display: flex
+        justify-content: center
+        align-items: center
+        .featyre-head-foto
+            .work-head
+                margin-bottom: 40px
+
+
+
+@media ( max-width:$screen-md )
+    .card-container-work
+        margin: auto;
+        align-items: baseline
+        display: grid;
+        grid-template-rows: 1fr 
+        grid-template-columns: 1fr
+        grid-gap: 10px;
+    .work-card-description 
+        display: flex;
+        justify-content: center
+        margin-bottom: 50px;
+    .card
+        margin: auto
+
+    .featyre-container
+        display: flex
+        justify-content: center
+        align-items: center
+        .featyre-head-foto
+            .work-head
+                .main-heading
+                    font-size: 41px
+    
+
+

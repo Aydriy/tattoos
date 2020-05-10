@@ -1,0 +1,65 @@
+
+
+
+
+.about-us-container
+    display: flex
+    justify-content: center
+    align-items: center
+
+.about-us-text-foto
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: -25px
+    article
+        margin-right: 30px
+
+@media ( min-width:$screen-lg-max  )
+    .about-us
+        height: 408px
+        background: url('./image/aboutUsBg.png')
+        background-size: cover
+        background-repeat: no-repeat
+
+@media ( max-width:$screen-lg-max  )
+    .about-us
+        height: 908px
+        background: url('./image/aboutUsBg.png')
+        background-size: cover
+        background-repeat: no-repeat
+    .about-us-text-foto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-top: 30px
+        article
+            margin-bottom: 60px
+
+@media ( min-width:$screen-md )  
+    .about-us-description-dark
+        width: 455px
+        height: 162px
+        margin-top: 20px
+
+@media ( max-width:$screen-md )
+    .about-us-text-foto article
+        margin-right: 0
+
+    .main-heading
+        font-size: 41px
+    .about-us-description-dark 
+        width: 300px;
+
+    .about-us-img
+        img
+            height: 256px
+            width: 340px
+    .about-us
+        height: 728px
+        background: url('./image/aboutUsBg.png')
+        background-size: cover
+        background-repeat: no-repeat
+      
+
