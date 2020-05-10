@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb2c119a1263793bada90e080d7adaab",
+    "revision": "97f141e1f7a195bfe41da987a023ca6f",
     "url": "/tattoos/index.html"
   },
   {
