@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import picture1 from "../../sass/Components/InstagramWork/image/picture1.svg";
 import picture2 from "../../sass/Components/InstagramWork/image/picture2.svg";
 import picture3 from "../../sass/Components/InstagramWork/image/picture3.svg";
@@ -13,6 +13,8 @@ import picture11 from "../../sass/Components/InstagramWork/image/picture11.svg";
 import picture12 from "../../sass/Components/InstagramWork/image/picture12.svg";
 import picture13 from "../../sass/Components/InstagramWork/image/picture13.svg";
 import picture14 from "../../sass/Components/InstagramWork/image/picture14.svg";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 
 const ShowMorePlus = (props) => {
   return (
@@ -65,39 +67,226 @@ const ShowMorePlus = (props) => {
   );
 };
 
-export default function InstagramWork() {
-  return (
-    <div className="instagramWork" id="instagramWork">
-      <div className="container">
-        <article className="instagramWork-head">
-          <span className="main-heading">instagram collective work</span>
-        </article>
-        <div className="grid-container-img">
-          <div className="grid">
-            <img src={picture7} className="item1" />
-            <div className="inner-grid">
-              <img src={picture1} alt="" />
-              <img src={picture12} alt="" />
-              <img src={picture4} alt="" />
-              <img src={picture8} alt="" />
-              <img src={picture5} alt="" />
-              <img src={picture6} alt="" />
+const images = [picture1, picture12, picture4, picture8, picture5, picture6];
+
+const imagesSecond = [
+  picture14,
+  picture9,
+  picture3,
+  picture10,
+  picture11,
+  picture13,
+];
+
+export default class FutureWork extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      photoIndex: 0,
+      isOpen: false,
+      isOpenSecond: false,
+      openSingleFirst: false,
+      openSingleSecond: false,
+    };
+  }
+
+  componentDidMount = () => {};
+
+  render() {
+    const {
+      photoIndex,
+      isOpen,
+      openSingleFirst,
+      openSingleSecond,
+      isOpenSecond,
+    } = this.state;
+
+    const InstagramFotosInnerFirst = (props) => {
+      return (
+        <div className="inner-grid">
+          {this.props.images === 0 ? (
+            <p>
+              <strong>No Images found!</strong>
+            </p>
+          ) : (
+            <React.Fragment>
+              {images.map((index, key) => (
+                <img
+                  key={key}
+                  src={index}
+                  alt="gallery"
+                  onClick={() =>
+                    this.setState({ isOpen: true, photoIndex: key })
+                  }
+                />
+              ))}
+            </React.Fragment>
+          )}
+
+          {isOpen && (
+            <Lightbox
+              activeProps={{ width: "100%", height: "100%" }}
+              mainSrc={images[photoIndex]}
+              // nextSrc={images[(photoIndex + 1) % images.length]}
+              // prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+              onCloseRequest={() => this.setState({ isOpen: false })}
+              // onMovePrevRequest={() =>
+              //   this.setState({
+              //     photoIndex: (photoIndex + images.length - 1) % images.length,
+              //   })
+              // }
+              // onMoveNextRequest={() =>
+              //   this.setState({
+              //     photoIndex: (photoIndex + 1) % images.length,
+              //   })
+              // }
+            />
+          )}
+        </div>
+      );
+    };
+
+    const InstagramFotosInnerSecond = (props) => {
+      return (
+        <div className="inner-grid">
+          {this.props.imagesSecond === 0 ? (
+            <p>
+              <strong>No Images found!</strong>
+            </p>
+          ) : (
+            <React.Fragment>
+              {imagesSecond.map((index, key) => (
+                <img
+                  key={key}
+                  src={index}
+                  alt="gallery"
+                  onClick={() =>
+                    this.setState({ isOpenSecond: true, photoIndex: key })
+                  }
+                />
+              ))}
+            </React.Fragment>
+          )}
+
+          {isOpenSecond && (
+            <Lightbox
+              mainSrc={imagesSecond[photoIndex]}
+              // nextSrc={imagesSecond[(photoIndex + 1) % imagesSecond.length]}
+              // prevSrc={
+              //   imagesSecond[
+              //     (photoIndex + imagesSecond.length - 1) % imagesSecond.length
+              //   ]
+              // }
+              onCloseRequest={() => this.setState({ isOpenSecond: false })}
+              // onMovePrevRequest={() =>
+              //   this.setState({
+              //     photoIndex:
+              //       (photoIndex + imagesSecond.length - 1) %
+              //       imagesSecond.length,
+              //   })
+              // }
+              // onMoveNextRequest={() =>
+              //   this.setState({
+              //     photoIndex: (photoIndex + 1) % imagesSecond.length,
+              //   })
+              // }
+            />
+          )}
+        </div>
+      );
+    };
+
+    const InstagramFotosSingleFirst = (props) => {
+      return (
+        <div className="large-first">
+          {this.props.images === 0 ? (
+            <p>
+              <strong>No Images found!</strong>
+            </p>
+          ) : (
+            <React.Fragment>
+              <img
+                src={picture7}
+                alt="gallery"
+                onClick={() => this.setState({ openSingleFirst: true })}
+              />
+            </React.Fragment>
+          )}
+
+          {openSingleFirst && (
+            <Lightbox
+              mainSrc={picture7}
+              onCloseRequest={() => this.setState({ openSingleFirst: false })}
+            />
+          )}
+        </div>
+      );
+    };
+
+    const InstagramFotosSingleSecond = (props) => {
+      return (
+        <div className="large-second">
+          {this.props.images === 0 ? (
+            <p>
+              <strong>No Images found!</strong>
+            </p>
+          ) : (
+            <React.Fragment>
+              <img
+                src={picture2}
+                alt="gallery"
+                onClick={() => this.setState({ openSingleSecond: true })}
+              />
+            </React.Fragment>
+          )}
+
+          {openSingleSecond && (
+            <Lightbox
+              mainSrc={picture2}
+              onCloseRequest={() => this.setState({ openSingleSecond: false })}
+            />
+          )}
+        </div>
+      );
+    };
+
+    return (
+      <div className="instagramWork" id="instagramWork">
+        <div className="container">
+          <article className="instagramWork-head">
+            <span className="main-heading">instagram collective work</span>
+          </article>
+          <div className="grid-container-img">
+            <div className="grid">
+              <InstagramFotosSingleFirst />
+              {/* <img src={picture7} className="item1" />
+              <div className="inner-grid">
+                <img src={picture1} alt="" />
+                <img src={picture12} alt="" />
+                <img src={picture4} alt="" />
+                <img src={picture8} alt="" />
+                <img src={picture5} alt="" />
+                <img src={picture6} alt="" />
+              </div> */}
+              <InstagramFotosInnerFirst />
             </div>
-          </div>
-          <div className="grid-second">
-            <div className="inner-grid">
-              <img src={picture14} alt="" />
-              <img src={picture9} alt="" />
-              <img src={picture3} alt="" />
-              <img src={picture10} alt="" />
-              <img src={picture11} alt="" />
-              <img src={picture13} alt="" />
+            <div className="grid-second">
+              <InstagramFotosInnerSecond />
+              {/* <div className="inner-grid">
+                <img src={picture14} alt="" />
+                <img src={picture9} alt="" />
+                <img src={picture3} alt="" />
+                <img src={picture10} alt="" />
+                <img src={picture11} alt="" />
+                <img src={picture13} alt="" />
+              </div>
+              <img src={picture2} className="item1" /> */}
+              <InstagramFotosSingleSecond />
             </div>
-            <img src={picture2} className="item1" />
+            <ShowMorePlus href="#" />
           </div>
-          <ShowMorePlus href="#" />
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }

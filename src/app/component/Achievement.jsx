@@ -9,7 +9,7 @@ const AwardSvg = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0)">
+      <g clipPath="url(#clip0)">
         <path
           d="M8.21484 45.9801C8.21484 45.9801 9.72879 42.4277 7.17127 38.7212C4.61119 35.0146 0.742793 34.3668 0.742793 34.3668C0.742793 34.3668 -0.920233 38.5644 1.57302 42.1784C4.06884 45.7899 8.21484 45.9801 8.21484 45.9801Z"
           fill="#89898B"
@@ -128,8 +128,8 @@ const AwardSvg = () => {
           y2="57.3134"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B1A8A8" />
-          <stop offset="1" stop-color="#89898B" />
+          <stop stopColor="#B1A8A8" />
+          <stop offset="1" stopColor="#89898B" />
         </linearGradient>
         <clipPath id="clip0">
           <rect width="80" height="80" fill="white" />
@@ -197,8 +197,8 @@ const BubbleSvg = () => {
           y2="15"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#8B8989" />
-          <stop offset="1" stop-color="#9B7B7B" stop-opacity="0.29" />
+          <stop stopColor="#8B8989" />
+          <stop offset="1" stopColor="#9B7B7B" stopOpacity="0.29" />
         </linearGradient>
       </defs>
     </svg>
@@ -279,8 +279,8 @@ const ComputerSvg = () => {
           y2="42"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B6ACAC" />
-          <stop offset="1" stop-color="#8E8A8A" />
+          <stop stopColor="#B6ACAC" />
+          <stop offset="1" stopColor="#8E8A8A" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -290,8 +290,8 @@ const ComputerSvg = () => {
           y2="40.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B6ACAC" />
-          <stop offset="1" stop-color="#8E8A8A" />
+          <stop stopColor="#B6ACAC" />
+          <stop offset="1" stopColor="#8E8A8A" />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
@@ -301,8 +301,8 @@ const ComputerSvg = () => {
           y2="44"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B6ACAC" />
-          <stop offset="1" stop-color="#8E8A8A" />
+          <stop stopColor="#B6ACAC" />
+          <stop offset="1" stopColor="#8E8A8A" />
         </linearGradient>
         <linearGradient
           id="paint3_linear"
@@ -312,8 +312,8 @@ const ComputerSvg = () => {
           y2="42"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B6ACAC" />
-          <stop offset="1" stop-color="#8E8A8A" />
+          <stop stopColor="#B6ACAC" />
+          <stop offset="1" stopColor="#8E8A8A" />
         </linearGradient>
         <linearGradient
           id="paint4_linear"
@@ -323,8 +323,8 @@ const ComputerSvg = () => {
           y2="51"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B1A8A8" />
-          <stop offset="1" stop-color="#89898B" />
+          <stop stopColor="#B1A8A8" />
+          <stop offset="1" stopColor="#89898B" />
         </linearGradient>
       </defs>
     </svg>

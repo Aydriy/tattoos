@@ -42,9 +42,11 @@
     grid-template-rows: 222px 222px
     grid-template-columns: 222px 222px 222px 
     grid-gap: 11px;
-    img
-        width: 100%
-        height: 100%
+    
+
+
+    
+       
 @media ( max-width:$screen-lg-max  )
     .instagramWork
         height: 2580px
@@ -63,19 +65,31 @@
         grid-template-rows: 222px 222px 222px 
         grid-template-columns: 222px 222px 
         grid-gap: 11px;
+    .large-second
+        margin-top: 11px
+    .large-first
+        margin-bottom: 7px
+
+
+@media ( max-width:$screen-sm )
+    .inner-grid
         img
-            width: 100%
-            height: 100%
+            width: 70%
+   
+
+    .large-first, .large-second
+        img
+            width: 70%
 
     
-@media ( max-width:$screen-md )
+@media ( max-width:$screen-sm )
     .grid
         display: flex
         justify-content: center
         flex-direction: column
         
     .instagramWork
-        height: 5040px
+        height: 4850px
         background-color: #1D1C21
         padding-top: 70px
     
@@ -96,3 +110,16 @@
         align-items: center
         img
             margin-bottom: 10px
+
+    .inner-grid
+        img
+            width: 300px
+   
+
+    .large-first, .large-second
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img
+            width: 300px
+
