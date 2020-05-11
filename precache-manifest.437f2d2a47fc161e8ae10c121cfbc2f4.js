@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "97f141e1f7a195bfe41da987a023ca6f",
+    "revision": "020ca82ee44e5bb20ae52f2d9cca65cf",
     "url": "/tattoos/index.html"
   },
   {
-    "revision": "0893cca9210e6fdf50dc",
-    "url": "/tattoos/static/css/main.91ae94d7.chunk.css"
+    "revision": "d9f8d2e993f22ade4427",
+    "url": "/tattoos/static/css/2.9522b9fe.chunk.css"
   },
   {
-    "revision": "e2c82d2c97bfa93f9476",
-    "url": "/tattoos/static/js/2.ffd20765.chunk.js"
+    "revision": "f3b1db8f620a9aa18738",
+    "url": "/tattoos/static/css/main.88f8a1e3.chunk.css"
   },
   {
-    "revision": "2a65342a7cef87ae756f1549b040326b",
-    "url": "/tattoos/static/js/2.ffd20765.chunk.js.LICENSE.txt"
+    "revision": "d9f8d2e993f22ade4427",
+    "url": "/tattoos/static/js/2.df16a77e.chunk.js"
   },
   {
-    "revision": "0893cca9210e6fdf50dc",
-    "url": "/tattoos/static/js/main.2bfb28d4.chunk.js"
+    "revision": "e59f305d3379894f2d84fdaf7bd24347",
+    "url": "/tattoos/static/js/2.df16a77e.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "f3b1db8f620a9aa18738",
+    "url": "/tattoos/static/js/main.7dc6883d.chunk.js"
   },
   {
     "revision": "2de0b8558abe9a70cc17",
