@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/tattoos/static/css/main.88f8a1e3.chunk.css",
-    "main.js": "/tattoos/static/js/main.7dc6883d.chunk.js",
-    "main.js.map": "/tattoos/static/js/main.7dc6883d.chunk.js.map",
+    "main.css": "/tattoos/static/css/main.0a9cdfd1.chunk.css",
+    "main.js": "/tattoos/static/js/main.736900d7.chunk.js",
+    "main.js.map": "/tattoos/static/js/main.736900d7.chunk.js.map",
     "runtime-main.js": "/tattoos/static/js/runtime-main.48b002c3.js",
     "runtime-main.js.map": "/tattoos/static/js/runtime-main.48b002c3.js.map",
     "static/css/2.9522b9fe.chunk.css": "/tattoos/static/css/2.9522b9fe.chunk.css",
     "static/js/2.df16a77e.chunk.js": "/tattoos/static/js/2.df16a77e.chunk.js",
     "static/js/2.df16a77e.chunk.js.map": "/tattoos/static/js/2.df16a77e.chunk.js.map",
     "index.html": "/tattoos/index.html",
-    "precache-manifest.437f2d2a47fc161e8ae10c121cfbc2f4.js": "/tattoos/precache-manifest.437f2d2a47fc161e8ae10c121cfbc2f4.js",
+    "precache-manifest.9db083552548cc405713b01066576c2d.js": "/tattoos/precache-manifest.9db083552548cc405713b01066576c2d.js",
     "service-worker.js": "/tattoos/service-worker.js",
     "static/css/2.9522b9fe.chunk.css.map": "/tattoos/static/css/2.9522b9fe.chunk.css.map",
-    "static/css/main.88f8a1e3.chunk.css.map": "/tattoos/static/css/main.88f8a1e3.chunk.css.map",
+    "static/css/main.0a9cdfd1.chunk.css.map": "/tattoos/static/css/main.0a9cdfd1.chunk.css.map",
     "static/js/2.df16a77e.chunk.js.LICENSE.txt": "/tattoos/static/js/2.df16a77e.chunk.js.LICENSE.txt",
     "static/media/style.sass": "/tattoos/static/media/arrov.4f521474.svg",
     "static/media/aboutUsImage.png": "/tattoos/static/media/aboutUsImage.948857d3.png",
@@ -44,7 +44,7 @@
     "static/js/runtime-main.48b002c3.js",
     "static/css/2.9522b9fe.chunk.css",
     "static/js/2.df16a77e.chunk.js",
-    "static/css/main.88f8a1e3.chunk.css",
-    "static/js/main.7dc6883d.chunk.js"
+    "static/css/main.0a9cdfd1.chunk.css",
+    "static/js/main.736900d7.chunk.js"
   ]
 }
