@@ -148,7 +148,7 @@ export default class FutureWork extends Component {
 
     const InstagramFotosInnerSecond = (props) => {
       return (
-        <div className="inner-grid">
+        <div className="inner-grid inner-grid-second">
           {this.props.imagesSecond === 0 ? (
             <p>
               <strong>No Images found!</strong>

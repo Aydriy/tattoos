@@ -857,6 +857,10 @@
   }
 }
 
+.masonry-item img {
+  cursor: pointer;
+}
+
 .about-us-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1135,6 +1139,29 @@
   }
   .large-first img, .large-second img {
     width: 300px;
+  }
+}
+
+.large-first img, .large-second img, .inner-grid img {
+  cursor: pointer;
+}
+
+@media (min-width: 1199px) {
+  .inner-grid img:nth-child(1) {
+    width: 222px;
+    height: 222px;
+  }
+  .inner-grid img:nth-child(4) {
+    width: 222px;
+    height: 222px;
+  }
+  .inner-grid-second img:nth-child(3) {
+    width: 222px;
+    height: 222px;
+  }
+  .inner-grid-second img:nth-child(6) {
+    width: 222px;
+    height: 222px;
   }
 }
 
