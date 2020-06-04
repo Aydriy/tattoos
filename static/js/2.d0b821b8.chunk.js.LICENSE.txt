@@ -5,6 +5,12 @@ object-assign
 */
 
 /*!
+   * imagesLoaded v4.1.4
+   * JavaScript is all like "You images are done yet or what?"
+   * MIT License
+   */
+
+/*!
   * $script.js JS loader & dependency manager
   * https://github.com/ded/script.js
   * (c) Dustin Diaz 2014 | License MIT

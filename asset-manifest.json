@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/tattoos/static/css/main.0a9cdfd1.chunk.css",
-    "main.js": "/tattoos/static/js/main.736900d7.chunk.js",
-    "main.js.map": "/tattoos/static/js/main.736900d7.chunk.js.map",
+    "main.css": "/tattoos/static/css/main.48e433eb.chunk.css",
+    "main.js": "/tattoos/static/js/main.5a778a3b.chunk.js",
+    "main.js.map": "/tattoos/static/js/main.5a778a3b.chunk.js.map",
     "runtime-main.js": "/tattoos/static/js/runtime-main.48b002c3.js",
     "runtime-main.js.map": "/tattoos/static/js/runtime-main.48b002c3.js.map",
     "static/css/2.9522b9fe.chunk.css": "/tattoos/static/css/2.9522b9fe.chunk.css",
-    "static/js/2.df16a77e.chunk.js": "/tattoos/static/js/2.df16a77e.chunk.js",
-    "static/js/2.df16a77e.chunk.js.map": "/tattoos/static/js/2.df16a77e.chunk.js.map",
+    "static/js/2.d0b821b8.chunk.js": "/tattoos/static/js/2.d0b821b8.chunk.js",
+    "static/js/2.d0b821b8.chunk.js.map": "/tattoos/static/js/2.d0b821b8.chunk.js.map",
     "index.html": "/tattoos/index.html",
-    "precache-manifest.9db083552548cc405713b01066576c2d.js": "/tattoos/precache-manifest.9db083552548cc405713b01066576c2d.js",
+    "precache-manifest.ff2e362c38cd129401ece2d4a38cbc45.js": "/tattoos/precache-manifest.ff2e362c38cd129401ece2d4a38cbc45.js",
     "service-worker.js": "/tattoos/service-worker.js",
     "static/css/2.9522b9fe.chunk.css.map": "/tattoos/static/css/2.9522b9fe.chunk.css.map",
-    "static/css/main.0a9cdfd1.chunk.css.map": "/tattoos/static/css/main.0a9cdfd1.chunk.css.map",
-    "static/js/2.df16a77e.chunk.js.LICENSE.txt": "/tattoos/static/js/2.df16a77e.chunk.js.LICENSE.txt",
+    "static/css/main.48e433eb.chunk.css.map": "/tattoos/static/css/main.48e433eb.chunk.css.map",
+    "static/js/2.d0b821b8.chunk.js.LICENSE.txt": "/tattoos/static/js/2.d0b821b8.chunk.js.LICENSE.txt",
     "static/media/style.sass": "/tattoos/static/media/arrov.4f521474.svg",
     "static/media/aboutUsImage.png": "/tattoos/static/media/aboutUsImage.948857d3.png",
     "static/media/image.svg": "/tattoos/static/media/image.d6ba51c9.svg",
@@ -43,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.48b002c3.js",
     "static/css/2.9522b9fe.chunk.css",
-    "static/js/2.df16a77e.chunk.js",
-    "static/css/main.0a9cdfd1.chunk.css",
-    "static/js/main.736900d7.chunk.js"
+    "static/js/2.d0b821b8.chunk.js",
+    "static/css/main.48e433eb.chunk.css",
+    "static/js/main.5a778a3b.chunk.js"
   ]
 }
