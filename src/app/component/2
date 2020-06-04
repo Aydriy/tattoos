@@ -15,8 +15,6 @@ import picture13 from "../../sass/Components/InstagramWork/image/picture13.svg";
 import picture14 from "../../sass/Components/InstagramWork/image/picture14.svg";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import { SRLWrapper } from "simple-react-lightbox";
-
 
 const ShowMorePlus = (props) => {
   return (

@@ -1165,6 +1165,11 @@
   }
 }
 
+.ril__image {
+  height: 455px;
+  width: 455px;
+}
+
 .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;

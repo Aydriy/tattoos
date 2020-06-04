@@ -8,20 +8,23 @@ import InstagramWork from "./component/InstagramWork";
 import ContactForm from "./component/ContactForm";
 import Map from "./component/Map";
 import Footer from "./component/Footer";
+import SimpleReactLightbox from "simple-react-lightbox";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Artists />
-      <Achievement />
-      <FutureWork />
-      <AboutUs />
-      <InstagramWork />
-      <ContactForm />
-      <Map />
-      <Footer />
-    </div>
+    <SimpleReactLightbox>
+      <div className="App">
+        <Header />
+        <Artists />
+        <Achievement />
+        <FutureWork />
+        <AboutUs />
+        <InstagramWork />
+        <ContactForm />
+        <Map />
+        <Footer />
+      </div>
+    </SimpleReactLightbox>
   );
 }
 
